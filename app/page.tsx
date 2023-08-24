@@ -19,10 +19,10 @@ export default transition (function Home() {
             <Link href={'/Contact'}><li className=" text-white">Contact</li></Link>
           </ul>
       </div>
-      <section className="  grid grid-cols-1 lg:grid-cols-2  bg-[url('/background-img.svg')] lg:bg-[url('/orangeWave.svg')]  lg:bg-center bg-cover  ">
-        <motion.div initial={{opacity: 0}} animate={{opacity: 1}}  transition={{ duration: 6, ease: [0.22, 1, 0.36, 1]}} className=" hidden lg:flex container-3d lg:pt-[10%] ml-[15%] 2xl:pl-[20%] h-[500px] lg:h-screen flex-col justify-center w-full  ">
-        <div className="px-3 pt-20 pb-5 2xl:pt-80 2xl:pb-6 flex flex-col justify-center  ">
-            <h1 className=" text-5xl lg:text-6xl xl:text-8xl Name  text-orange-600 ">Blair Chappell</h1>
+      <section className="  grid grid-cols-1 lg:grid-cols-2 h-screen bg-[url('/background-img.svg')] lg:bg-[url('/orangeWave.svg')]  lg:bg-center bg-cover  ">
+        <motion.div initial={{opacity: 0}} animate={{opacity: 1}}  transition={{ duration: 6, ease: [0.22, 1, 0.36, 1]}} className=" hidden lg:flex container-3d lg:pt-[10%] ml-[15%] 2xl:pl-[20%] h-[500px] flex-col justify-center w-full  ">
+        <div className="px-3 pt-[40%] pb-5 2xl:pt-80 2xl:pb-6 flex flex-col justify-center  ">
+            <h1 className=" text-5xl lg:text-6xl xl:text-8xl 2xl:text-9xl Name  text-orange-600 ">Blair Chappell</h1>
             <h3 className=" text-3xl   ">Frontend Developer</h3>
             <div className="flex gap-1 z-50 py-3 lg:pb-[2%] ">
             <Link href={`https://github.com/blairhb7`}><Image width={40} height={40} src="github-square.svg" alt="github" className=" w-6 h-6" /></Link>
