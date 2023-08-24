@@ -1,4 +1,4 @@
-"use client"
+
 import { motion } from "framer-motion"
 import App from "next/app";
 import React from "react";

@@ -67,4 +67,4 @@ const Archive = () => {
   )
 }
 
-export default transition(Archive)
+export default Archive
