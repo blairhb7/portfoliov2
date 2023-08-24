@@ -11,7 +11,7 @@ const Experience = () => {
         {exp.experience.map((info: {id:number, name:string, title:string, date:string, disc:string, secondline:string }) =>{
           const {id, name, title, disc, date, secondline} = info
           return (
-            <div className=" hover:text-black text-black flex-col  px-6 lg:px-2 lg:m-10 p-2 z-0  transition duration-700 motion-reduce:transition-none ">
+            <div key={id} className=" hover:text-black text-black flex-col  px-6 lg:px-2 lg:m-10 p-2 z-0  transition duration-700 motion-reduce:transition-none ">
               <div className=" text-sm w-full">{info.date}</div>
               <div className="">
                 <h1 className=" font-bold text-2xl ">{info.name}</h1>
