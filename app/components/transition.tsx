@@ -1,5 +1,6 @@
 "use client"
 import { motion } from "framer-motion"
+import App from "next/app";
 import React from "react";
 
 
@@ -9,7 +10,7 @@ const animationConfiguration = {
     exit: { opacity: 0 },
 };
 
-const transition = (OgComponent:any) => {
+const Transition = (OgComponent:any) => {
     return () => (
         <>
         <OgComponent/>
@@ -27,4 +28,6 @@ const transition = (OgComponent:any) => {
     )
 }
 
-export default transition
+
+
+export default Transition
