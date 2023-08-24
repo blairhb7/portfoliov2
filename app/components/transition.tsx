@@ -4,13 +4,16 @@ import App from "next/app";
 import React from "react";
 
 
-const animationConfiguration = {
-    initial: { opacity: 0 },
-    animate: { opacity: 1 },
-    exit: { opacity: 0 },
-};
 
- export default function Transition(OgComponent:any){
+
+const Transition = (OgComponent:any) => {
+    const animationConfiguration = {
+        initial: { opacity: 0 },
+        animate: { opacity: 1 },
+        exit: { opacity: 0 },
+    };
+
+
     return () => (
         <>
         <OgComponent/>
@@ -28,3 +31,6 @@ const animationConfiguration = {
     )
 }
 
+Transition.displayName = 'Transition'
+
+export default Transition
