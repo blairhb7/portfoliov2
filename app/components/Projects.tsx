@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import data from '../Data'
+import Image from 'next/image';
 
 const Projects = () => {
     const [projects, setProjects] = useState<any>(data)
@@ -12,7 +13,7 @@ const Projects = () => {
           return (
             <div key={id} className=" ">
               <a key={id}  href={site.Link} className=' cursor-pointer'>
-              <img key={id}  src={site.pic} className=' h-full' />
+              <Image width={40} height={40} key={id} src={site.pic} className=' h-full' alt={''} />
 
               </a>
             </div>

@@ -85,11 +85,11 @@ useEffect(() => {
               <div  style={{ opacity: slideIndex === index ? 1 : 0, visibility: slideIndex === index ? 'visible' : 'hidden'}} className=" h-full grid grid-cols-1 justify-between transition-all ease-linear duration-1000   ">
               <div className=" flex  items-end gap-2 justify-end absolute opacity-90 hover:opacity-90  z-30 px-14 py-4  ">
                   <div onClick={next} className=" cursor-pointer    duration-1000 flex justify-center items-center">
-                    <motion.img  initial={{opacity: 0}} animate={{opacity: 1}}  transition={{ duration: 10, ease: [0.22, 1, 0.36, 1]}} src={"/down.png" } alt={""} className=" w-8 h-8" />
+                    <Image width={40} height={40}  src={"/down.png" } alt={""} className=" w-8 h-8" />
                     
                   </div>
                   <div onClick={prev} className="cursor-pointer   duration-1000 flex justify-center items-center">
-                    <motion.img  initial={{opacity: 0}} animate={{opacity: 1}}  transition={{ duration: 10, ease: [0.22, 1, 0.36, 1]}} src="/up.png" alt="" className=" w-8 h-8" />
+                    <Image width={40} height={40}    src="/up.png" alt="" className=" w-8 h-8" />
                   </div>
               </div>
                 <div  className="flex-col flex  bg-black text-[#fff] h-[890px] md:h-fits 2xl:h-screen  lg:pt-10 lg:pb-64 2xl:pt-80 pt-10 overflow-y-scroll scrollbar-hide   px-6 lg:px-8">

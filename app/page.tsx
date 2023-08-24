@@ -25,8 +25,8 @@ export default transition (function Home() {
             <h1 className=" text-5xl lg:text-6xl xl:text-8xl Name  text-orange-600 ">Blair Chappell</h1>
             <h3 className=" text-3xl   ">Frontend Developer</h3>
             <div className="flex gap-1 z-50 py-3 lg:pb-[2%] ">
-            <Link href={`https://github.com/blairhb7`}><img src="github-square.svg" alt="github" className=" w-6 h-6" /></Link>
-            <Link href={`https://www.linkedin.com/in/blair-chappell-23818420a/`}><img src="Linkedin-square.svg" alt="linkedin" className=" w-6 h-6" /></Link>
+            <Link href={`https://github.com/blairhb7`}><Image width={40} height={40} src="github-square.svg" alt="github" className=" w-6 h-6" /></Link>
+            <Link href={`https://www.linkedin.com/in/blair-chappell-23818420a/`}><Image width={40} height={40}  src="Linkedin-square.svg" alt="linkedin" className=" w-6 h-6" /></Link>
             </div>
           </div>
           <ul className=" z-50 gap-1 md:gap-3 w-full ">
@@ -44,8 +44,8 @@ export default transition (function Home() {
             <h4 className=" text-sm text-orange-500">For best experience view on a Desktop</h4>
             <p className=" text-xs py-2 w-60">I build accessible, inclusive products and digital experiences for the web.</p>
             <div className="flex gap-1 z-50 lg:pb-[35%] ">
-            <Link href={`https://github.com/blairhb7`}><img src="github-square.svg" alt="github" className=" w-6 h-6" /></Link>
-            <Link href={`https://www.linkedin.com/in/blair-chappell-23818420a/`}><img src="Linkedin-square.svg" alt="linkedin" className=" w-6 h-6" /></Link>
+            <Link href={`https://github.com/blairhb7`}><Image width={40} height={40} src="github-square.svg" alt="github" className=" w-6 h-6" /></Link>
+            <Link href={`https://www.linkedin.com/in/blair-chappell-23818420a/`}><Image width={40} height={40}  src="Linkedin-square.svg" alt="linkedin" className=" w-6 h-6" /></Link>
             </div>
           </div>
         <div  className=" lg:bg-[url('/Orange.svg')]  z-20 h-full lg:bg-right bg-cover py-3 lg:overflow-y-scroll lg:scrollbar-hide    ">

@@ -7,19 +7,14 @@ import { AnimatePresence } from 'framer-motion'
 import { CacheProvider } from '@chakra-ui/next-js'
 import { ChakraProvider } from '@chakra-ui/react'
 
+/* eslint-disable react/display-name */
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const Pt = PT_Sans({
   subsets: ['latin'],
   variable: '--font-Pt_Sans',
   weight: '700'
 })
 
-const abril = Abril_Fatface({
-  subsets: ['latin'],
-  variable: '--font-abril_Fatface',
-  weight: '400'
-})
 
 
 
