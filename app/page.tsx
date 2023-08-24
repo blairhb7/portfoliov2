@@ -19,7 +19,7 @@ export default transition (function Home() {
             <Link href={'/Contact'}><li className=" text-white">Contact</li></Link>
           </ul>
       </div>
-      <section className="  grid grid-cols-1 lg:grid-cols-2 h-[1100px] 2xl:h-[2000px] bg-[url('/background-img.svg')] lg:bg-[url('/orangeWave.svg')]  lg:bg-center bg-cover  ">
+      <section className="  grid grid-cols-1 lg:grid-cols-2 h-full lg:h-[1100px] 2xl:h-[2000px] bg-[url('/background-img.svg')] lg:bg-[url('/orangeWave.svg')]  lg:bg-center bg-cover  ">
         <motion.div initial={{opacity: 0}} animate={{opacity: 1}}  transition={{ duration: 6, ease: [0.22, 1, 0.36, 1]}} className=" hidden lg:flex container-3d lg:pt-[10%] ml-[15%] 2xl:pl-[20%] h-[500px] lg:h-screen flex-col justify-center w-full  ">
         <div className="px-3 pt-20 pb-5 2xl:pt-80 2xl:pb-6 flex flex-col justify-center  ">
             <h1 className=" text-5xl lg:text-6xl xl:text-8xl Name  text-orange-600 ">Blair Chappell</h1>
@@ -48,7 +48,7 @@ export default transition (function Home() {
             <Link href={`https://www.linkedin.com/in/blair-chappell-23818420a/`}><img src="Linkedin-square.svg" alt="linkedin" className=" w-6 h-6" /></Link>
             </div>
           </div>
-        <div  className=" lg:bg-[url('/Orange.svg')] overflow-hidden  z-20 h-full lg:bg-right bg-cover py-3 overflow-y-scroll scrollbar-hide    ">
+        <div  className=" lg:bg-[url('/Orange.svg')]  z-20 h-full lg:bg-right bg-cover py-3 lg:overflow-y-scroll lg:scrollbar-hide    ">
           <div className="   gap-2">
             <h2 className=" hidden lg:flex uppercase text-xs text-orange-500  font-medium animate-bounce">scroll down for more</h2>
             <motion.div initial={{opacity: 0}} animate={{opacity: 1}}  transition={{ duration: 6, ease: [0.22, 1, 0.36, 1]}} id='about' className=" w-[95%] lg:mr-8 mt-20 lg:mt-20 lg:hover:bg-white duration-700 lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg">
