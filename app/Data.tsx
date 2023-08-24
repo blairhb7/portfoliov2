@@ -115,7 +115,7 @@
             thirdline:`Tailwind CSS, a utility-first CSS framework, empowered us to craft a visually stunning and consistent design across the entire website. Its intuitive class-based approach allowed us to rapidly style and customize various components, resulting in a cohesive and aesthetically pleasing user interface. Tailwind CSS's extensive utility classes also facilitated responsive design, ensuring that the website looked great on screens of all sizes.`,
 
             forthline:`To enhance the user experience, we incorporated various features and functionalities into the FilmDuo website. These included an immersive homepage showcasing our portfolio, services, and testimonials, enabling visitors to get a glimpse of our expertise. We also integrated a contact form, allowing potential clients to reach out to us directly.`,
-            vid: "/landing page video.mp4",
+            vid: "/tates cookies.mp4",
             pic: "/FILMDUO.png"
         },
         {

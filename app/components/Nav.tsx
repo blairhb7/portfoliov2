@@ -1,6 +1,8 @@
 'use client'
 import React, { useState } from 'react'
 import Link from 'next/link';
+import Image from 'next/image';
+import { Img } from '@chakra-ui/react';
 
 
 const Nav = () => {
@@ -43,8 +45,8 @@ const fadeInUp = {
            </div>
           
            <div className=" flex flex-col py-2 justify-center items-center gap-3  ">
-                            <Link href={`https://github.com/blairhb7`}><img src="github-square.svg" alt="github" className="flex lg:w-6 lg:h-6 hover:animate-bounce duration-300" /></Link>
-                            <Link href={`https://www.linkedin.com/in/blair-chappell-23818420a/`}><img src="Linkedin-square.svg" alt="linkedin" className="flex justify-center lg:w-6 lg:h-6 hover:animate-bounce duration-300" /></Link>
+                            <Link href={`https://github.com/blairhb7`}><Img src={"github-square.svg"} alt={"github"} className="flex lg:w-6 lg:h-6 hover:animate-bounce duration-300" /></Link>
+                            <Link href={`https://www.linkedin.com/in/blair-chappell-23818420a/`}><Img src={"Linkedin-square.svg"} alt={"linkedin"} className="flex justify-center lg:w-6 lg:h-6 hover:animate-bounce duration-300" /></Link>
              </div>
         </div>
     </main>

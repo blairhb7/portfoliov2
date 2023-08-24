@@ -8,12 +8,13 @@ import Nav from '../components/Nav'
 import Link from 'next/link'
 import transition from '../components/transition'
 import { motion } from "framer-motion"
+import Image from 'next/image'
 
 
 
 
 
-const page = () => {
+const Page = () => {
   const [featureProjects, setFeatureProjects] = useState<any>(slides)
   const [index, setIndex] = useState(0)
 
@@ -50,6 +51,7 @@ useEffect(() => {
   return (
     <>
     <motion.main initial={{opacity: 0}} animate={{opacity: 1}}  transition={{ duration: 4, ease: [0.22, 1, 0.36, 1]}} className=" relative h-full ">
+      
       <Nav/>
       <div className=" xl:hidden s w-full pb-10 bg-black">
           <ul className=" flex p-2 fixed z-50 bg-black bg-opacity-50 font-headline w-full gap-6 text-[0.7em] sm:text-sm md:text-base">
@@ -59,7 +61,7 @@ useEffect(() => {
             <Link href={'/Contact'}><li className=" text-white">Contact</li></Link>
           </ul>
       </div>
-    
+   
         {featureProjects.map(( feature: {color:string, pic:string, firstline:string, secondline:string, thirdline:string, forthline:string, length:number, id:number, vid:string, title:string, date:string, disc:string, React:string, Next:string, Javascript:string, Typescript:string, Tailwind:string, Sanity:string, Vercel:string, Linksite:string}, slideIndex:number) =>{
           const {id, color, vid, pic, title, firstline, secondline, thirdline, forthline, date, React, Next, Javascript, Typescript, Tailwind, Sanity, Vercel, Linksite} = feature
 
@@ -83,7 +85,8 @@ useEffect(() => {
               <div  style={{ opacity: slideIndex === index ? 1 : 0, visibility: slideIndex === index ? 'visible' : 'hidden'}} className=" h-full grid grid-cols-1 justify-between transition-all ease-linear duration-1000   ">
               <div className=" flex  items-end gap-2 justify-end absolute opacity-90 hover:opacity-90  z-30 px-14 py-4  ">
                   <div onClick={next} className=" cursor-pointer    duration-1000 flex justify-center items-center">
-                    <motion.img  initial={{opacity: 0}} animate={{opacity: 1}}  transition={{ duration: 10, ease: [0.22, 1, 0.36, 1]}} src="/down.png" alt="" className=" w-8 h-8" />
+                    <motion.img  initial={{opacity: 0}} animate={{opacity: 1}}  transition={{ duration: 10, ease: [0.22, 1, 0.36, 1]}} src={"/down.png" } alt={""} className=" w-8 h-8" />
+                    
                   </div>
                   <div onClick={prev} className="cursor-pointer   duration-1000 flex justify-center items-center">
                     <motion.img  initial={{opacity: 0}} animate={{opacity: 1}}  transition={{ duration: 10, ease: [0.22, 1, 0.36, 1]}} src="/up.png" alt="" className=" w-8 h-8" />
@@ -110,4 +113,4 @@ useEffect(() => {
   )
 }
 
-export default transition (page)
+export default transition (Page)

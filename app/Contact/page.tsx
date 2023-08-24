@@ -6,6 +6,8 @@ import Nav from '../components/Nav'
 import transition from '../components/transition'
 import { m } from 'framer-motion'
 import { motion } from "framer-motion"
+import Image from 'next/image'
+import { Img } from '@chakra-ui/react'
 
 
 const page = () => {
@@ -55,8 +57,8 @@ const page = () => {
                         <Link href={'tel:17073154173'} ><h2 className=" text-black flex  items-center text-sm lg:text-xl h-20 pr-6 border-r-2 lg:border-r-4 border-black ">+7073154173</h2></Link>
                         <Link href={'mailto:blairhb7@yahoo.com'} ><h2 className=" text-black flex  items-center uppercase text-sm lg:text-xl h-20">Blairhb7@gmail.com</h2></Link>
                         <div className="w-full flex gap-3 justify-center py-1 ">
-                            <Link href={`https://github.com/blairhb7`}><img src="github-square.svg" alt="github" className=" lg:w-10 lg:h-10" /></Link>
-                            <Link href={`https://www.linkedin.com/in/blair-chappell-23818420a/`}><img src="Linkedin-square.svg" alt="linkedin" className=" lg:w-10 lg:h-10" /></Link>
+                            <Link href={`https://github.com/blairhb7`}><img src={"github-square.svg"} alt={"github"} className={" lg:w-10 lg:h-10"} /></Link>
+                            <Link href={`https://www.linkedin.com/in/blair-chappell-23818420a/`}><Img src={"Linkedin-square.svg"} alt={"linkedin"}   className={" lg:w-10 lg:h-10" }/></Link>
                         </div>
                     </div>
                 </div>
