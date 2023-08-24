@@ -85,21 +85,21 @@ useEffect(() => {
               <div  style={{ opacity: slideIndex === index ? 1 : 0, visibility: slideIndex === index ? 'visible' : 'hidden'}} className=" h-full grid grid-cols-1 justify-between transition-all ease-linear duration-1000   ">
               <div className=" flex  items-end gap-2 justify-end absolute opacity-90 hover:opacity-90  z-30 px-14 py-4  ">
                   <div onClick={next} className=" cursor-pointer    duration-1000 flex justify-center items-center">
-                    <Image width={40} height={40}  src={"/down.png" } alt={""} className=" w-8 h-8" />
+                    <Image width={500} height={500}  src={"/down.png" } alt={""} className=" w-8 h-8" />
                     
                   </div>
                   <div onClick={prev} className="cursor-pointer   duration-1000 flex justify-center items-center">
-                    <Image width={40} height={40}    src="/up.png" alt="" className=" w-8 h-8" />
+                    <Image width={500} height={500}    src="/up.png" alt="" className=" w-8 h-8" />
                   </div>
               </div>
-                <div  className="flex-col flex  bg-black text-[#fff] h-[890px] md:h-fits 2xl:h-screen  lg:pt-10 lg:pb-64 2xl:pt-80 pt-10 overflow-y-scroll scrollbar-hide   px-6 lg:px-8">
+                <div  className="flex-col flex  bg-black text-[#fff] h-screen lg:pt-10 lg:pb-64 2xl:pt-80 pt-10 overflow-y-scroll scrollbar-hide   px-6 lg:px-8">
                     <motion.h1 initial={{y:-100}} animate={{y: 10}}  transition={{ duration: 4, ease: [0.22, 1, 0.36, 1]}} style={{color}} className=" text-4xl xl:text-8xl py-5 font-serif uppercase font-semibold">{title}</motion.h1>
                     <motion.p initial={{opacity: 0}} animate={{opacity: 1}}  transition={{ duration: 4, ease: [0.22, 1, 0.36, 1]}} className=" text-sm lg:text-base  lg:font-normal lg:w-[90%] 2xl:w-[65%] py-2">{firstline}</motion.p>
                     <motion.p initial={{opacity: 0}} animate={{opacity: 1}}  transition={{ duration: 4, ease: [0.22, 1, 0.36, 1]}} className=" text-sm lg:text-base  lg:font-normal  lg:w-[90%] 2xl:w-[65%] py-2">{secondline}</motion.p>
                     <motion.p initial={{opacity: 0}} animate={{opacity: 1}}  transition={{ duration: 4, ease: [0.22, 1, 0.36, 1]}} className=" text-sm lg:text-base  lg:font-normal  lg:w-[90%] 2xl:w-[65%] py-2">{thirdline}</motion.p>
                     <motion.hr initial={{opacity: 0}} animate={{opacity: 1}}  transition={{ duration: 4, ease: [0.22, 1, 0.36, 1]}} className="w-[85%] my-5" />
                     <a href={Linksite} style={{color}} className=" z-50 cursor-pointer"><h2 className=" cursor-pointer text-2xl py-5 lg:py-8 font-semibold duration-500 hover:underline underline-offset-8 hover:translate-x-3">Visit Site</h2></a>
-                    <motion.a initial={{y:100}} animate={{y: -10}}  transition={{ duration: 4, ease: [0.22, 1, 0.36, 1]}} href={Linksite} className=' cursor-pointer z-50'><Image width={40} height={40}  src={pic} alt="" className="  cursor-pointer w-[74%] lg:max-w-[75%] 2xl:w-[55%] overflow-hidden " /></motion.a>
+                    <motion.a initial={{y:100}} animate={{y: -10}}  transition={{ duration: 4, ease: [0.22, 1, 0.36, 1]}} href={Linksite} className=' cursor-pointer z-50'><Image width={500} height={500}  src={pic} alt="" className="  cursor-pointer w-[74%] lg:max-w-[75%] 2xl:w-[55%] overflow-hidden " /></motion.a>
                 </div>
                   
               </div>
