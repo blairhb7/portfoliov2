@@ -10,7 +10,7 @@ const animationConfiguration = {
     exit: { opacity: 0 },
 };
 
-const Transition = (OgComponent:any) => {
+ export default function Transition(OgComponent:any){
     return () => (
         <>
         <OgComponent/>
@@ -28,6 +28,3 @@ const Transition = (OgComponent:any) => {
     )
 }
 
-Transition.displayName = 'transition'
-
-export default Transition

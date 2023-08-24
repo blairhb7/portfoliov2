@@ -11,8 +11,8 @@ const Projects = () => {
           const {id, pic, title, disc, date, React, Next, Javascript, Typescript, Tailwind, Sanity, Vercel, Link} = site
           return (
             <div key={id} className=" ">
-              <a href={site.Link} className=' cursor-pointer'>
-              <img src={site.pic} className=' h-full' />
+              <a key={id}  href={site.Link} className=' cursor-pointer'>
+              <img key={id}  src={site.pic} className=' h-full' />
 
               </a>
             </div>

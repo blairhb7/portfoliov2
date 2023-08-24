@@ -48,11 +48,11 @@ const Archive = () => {
                 <h2  className=" text-sm lg:text-lg font-medium">{year}</h2>
                 <h2   className={` text-xs  lg:text-lg font-medium uppercase  `}>{project}</h2>
                 <ul className="  hidden md:visible lg:grid grid-cols-1 xl:inline-flex  w-[70%] xl:w-full flex-wrap items-center text-[.7em]  px-8 2xl:text-sm gap-3">
-                      <li  className=" bg-cyan-500 text-white px-2 mb-1  rounded-lg">{techstack[0]}</li>
-                      <li className=" bg-black text-white px-2 mb-1  rounded-lg">{techstack[1]}</li>
-                      <li className=" bg-cyan-600 text-white px-2 mb-1  rounded-lg">{techstack[2]}</li>
-                      <li className=" bg-blue-500 text-white px-2  mb-1  rounded-lg">{techstack[3]}</li>
-                      <li className= {`bg-[#f55142] text-white px-2 mb-1  rounded-lg ${id === 5  ? 'hidden' : 'visble'}`}>{techstack[4]}</li>
+                      <li key={id}  className=" bg-cyan-500 text-white px-2 mb-1  rounded-lg">{techstack[0]}</li>
+                      <li key={id}  className=" bg-black text-white px-2 mb-1  rounded-lg">{techstack[1]}</li>
+                      <li key={id}  className=" bg-cyan-600 text-white px-2 mb-1  rounded-lg">{techstack[2]}</li>
+                      <li key={id}  className=" bg-blue-500 text-white px-2  mb-1  rounded-lg">{techstack[3]}</li>
+                      <li key={id}  className= {`bg-[#f55142] text-white px-2 mb-1  rounded-lg ${id === 5  ? 'hidden' : 'visble'}`}>{techstack[4]}</li>
                 </ul>
                 <a href={Link}><h2 className=" flex flex-wrap w-fit font-bold text-[.5em] xl:text-sm lg:pl-4">{Link}</h2></a>
               </div>
