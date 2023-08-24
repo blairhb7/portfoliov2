@@ -6,7 +6,7 @@ import React from "react";
 
 
 
-const Transition = (OgComponent:any) => {
+function Transition (OgComponent:any) {
     const animationConfiguration = {
         initial: { opacity: 0 },
         animate: { opacity: 1 },

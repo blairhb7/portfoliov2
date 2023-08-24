@@ -99,7 +99,7 @@ useEffect(() => {
                     <motion.p initial={{opacity: 0}} animate={{opacity: 1}}  transition={{ duration: 4, ease: [0.22, 1, 0.36, 1]}} className=" text-sm lg:text-base  lg:font-normal  lg:w-[90%] 2xl:w-[65%] py-2">{thirdline}</motion.p>
                     <motion.hr initial={{opacity: 0}} animate={{opacity: 1}}  transition={{ duration: 4, ease: [0.22, 1, 0.36, 1]}} className="w-[85%] my-5" />
                     <a href={Linksite} style={{color}} className=" z-50 cursor-pointer"><h2 className=" cursor-pointer text-2xl py-5 lg:py-8 font-semibold duration-500 hover:underline underline-offset-8 hover:translate-x-3">Visit Site</h2></a>
-                    <motion.a initial={{y:100}} animate={{y: -10}}  transition={{ duration: 4, ease: [0.22, 1, 0.36, 1]}} href={Linksite} className=' cursor-pointer z-50'><img src={pic} alt="" className="  cursor-pointer w-[74%] lg:max-w-[75%] 2xl:w-[55%] overflow-hidden " /></motion.a>
+                    <motion.a initial={{y:100}} animate={{y: -10}}  transition={{ duration: 4, ease: [0.22, 1, 0.36, 1]}} href={Linksite} className=' cursor-pointer z-50'><Image width={40} height={40}  src={pic} alt="" className="  cursor-pointer w-[74%] lg:max-w-[75%] 2xl:w-[55%] overflow-hidden " /></motion.a>
                 </div>
                   
               </div>

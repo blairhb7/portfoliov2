@@ -26,7 +26,7 @@ export default transition (function Home() {
             <h3 className=" text-3xl   ">Frontend Developer</h3>
             <div className="flex gap-1 z-50 py-3 lg:pb-[2%] ">
             <Link href={`https://github.com/blairhb7`}><Image width={40} height={40} src="github-square.svg" alt="github" className=" w-6 h-6" /></Link>
-            <Link href={`https://www.linkedin.com/in/blair-chappell-23818420a/`}><Image width={40} height={40}  src="Linkedin-square.svg" alt="linkedin" className=" w-6 h-6" /></Link>
+            <Link href={`https://www.linkedin.com/in/blair-chappell-23818420a/`}><Image width={40} height={40} src="Linkedin-square.svg" alt="linkedin" className=" w-6 h-6" /></Link>
             </div>
           </div>
           <ul className=" z-50 gap-1 md:gap-3 w-full ">
