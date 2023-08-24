@@ -14,8 +14,8 @@ const page = () => {
   return (
     <>
     <Nav/>
-    <motion.main initial={{opacity: 0}} animate={{opacity: 1}}  transition={{ duration: 4, ease: [0.22, 1, 0.36, 1]}} exit={{opacity: 0}} className="grid grid-cols-1 lg:grid-cols-2  ">
-    <div className=" lg:hidden  w-full bg-black">
+    <motion.main initial={{opacity: 0}} animate={{opacity: 1}}  transition={{ duration: 4, ease: [0.22, 1, 0.36, 1]}} exit={{opacity: 0}} className="grid grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 ">
+    <div className=" xl:hidden  w-full bg-black">
           <ul className=" flex p-2 fixed z-50 bg-black bg-opacity-50 font-headline w-full gap-4 text-xs sm:text-sm md:text-base">
             <Link href={'/'}><li className=" text-gray-300">Experience</li></Link>
             <Link href={'/ProjectPage'}><li className=" text-gray-300">Featured Projects</li></Link>
@@ -25,12 +25,12 @@ const page = () => {
       </div>
         <section className=" bg-cover relative  h-full overflow-hidden ">
             <div className="absolute  flex justify-center items-center w-full h-full container-3d   ">
-                <motion.ul initial={{opacity: 0}} animate={{opacity: 1}}  transition={{ duration: 14, ease: [0.22, 1, 0.36, 1]}} className=" hidden lg:flex flex-col lg:gap-44 gap-2 opacity-50  z-50 w-full xl:px-[10%] 2xl:px-[35%]">
+                <motion.ul initial={{opacity: 0}} animate={{opacity: 1}}  transition={{ duration: 14, ease: [0.22, 1, 0.36, 1]}} className=" hidden lg:flex flex-col lg:gap-44 gap-2 opacity-50  z-50 w-full lg:pl-[15%] xl:px-[10%] 2xl:px-[35%]">
                     <li className="z-50 "><div className="box-3d ease-in-out   duration-200"><h1 className=" text-4xl lg:text-[12em] font-sans  text-white font-extrabold">Say</h1></div></li>
                     <li className="z-50 "><div className="box-3d ease-in-out  duration-200"><h1 className=" text-4xl lg:text-[12em] font-sans  text-white  font-extrabold">Hello</h1></div></li>
                 </motion.ul>
             </div>
-            <video autoPlay loop muted className="LandingVid" src="/phone-call.mp4"></video>
+            <video autoPlay loop muted playsInline className="LandingVid" src="/phone-call.mp4"></video>
         </section>
         <section className="bg-black  lg:overflow-y-scroll scrollbar-hide overflow-hidden">
             <div className="">

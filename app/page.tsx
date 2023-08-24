@@ -19,7 +19,7 @@ export default transition (function Home() {
             <Link href={'/Contact'}><li className=" text-white">Contact</li></Link>
           </ul>
       </div>
-      <section className="  grid grid-cols-1 lg:grid-cols-2 h-screen bg-[url('/background-img.svg')] lg:bg-[url('/orangeWave.svg')]  lg:bg-center bg-cover  ">
+      <section className="  grid grid-cols-1 lg:grid-cols-2 md:h-screen bg-[url('/background-img.svg')] lg:bg-[url('/orangeWave.svg')]  lg:bg-center bg-cover  ">
         <motion.div initial={{opacity: 0}} animate={{opacity: 1}}  transition={{ duration: 6, ease: [0.22, 1, 0.36, 1]}} className=" hidden lg:flex container-3d lg:pt-[10%] ml-[15%] 2xl:pl-[20%] h-[500px] flex-col justify-center w-full  ">
         <div className="px-3 pt-[40%] pb-5 2xl:pt-80 2xl:pb-6 flex flex-col justify-center  ">
             <h1 className=" text-5xl lg:text-6xl xl:text-8xl 2xl:text-9xl Name  text-orange-600 ">Blair Chappell</h1>
@@ -53,8 +53,8 @@ export default transition (function Home() {
             <h2 className=" hidden lg:flex uppercase text-xs text-orange-500  font-medium animate-bounce">scroll down for more</h2>
             <motion.div initial={{opacity: 0}} animate={{opacity: 1}}  transition={{ duration: 6, ease: [0.22, 1, 0.36, 1]}} id='about' className=" w-[95%] lg:mr-8 mt-20 lg:mt-20 lg:hover:bg-white duration-700 lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg">
             <div className=" py-10 ">
-              <h2 className=" text-4xl py-4  px-2 md:text-black text-white ">About</h2>
-              <hr className="mx-2 w-[90%]" />
+              <h2 className=" text-4xl py-4  px-8 lg:px-2 md:text-black text-white ">About</h2>
+              <hr className="mx-2  w-[90%]" />
             </div>
               <p className=" text-sm lg:text-sm 2xl:text-base  font  font-sans mb-3 px-8 lg:w-[89%] font-medium flex-wrap">Back in 2013, I decided to try my hand at learning how to code and create websites,
               and tumbled head first into the rabbit hole of coding and web development. After many books, online coding program's, and lots of trial & error, 

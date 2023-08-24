@@ -79,7 +79,7 @@ useEffect(() => {
               <div  style={{ opacity: slideIndex === index ? 1 : 0, visibility: slideIndex === index ? 'visible' : 'hidden',}} className="  flex justify-center transition-all ease-linear duration-1000 h-full  ">
               <motion.h1  initial={{opacity: 0}} animate={{opacity: 1}}  transition={{ duration: 4, ease: [0.22, 1, 0.36, 1]}} className="flex  justify-center absolute pt-[4%] text-3xl uppercase text-title text-white  z-50">{title}</motion.h1>
               <motion.h2  initial={{opacity: 0}} animate={{opacity: 1}}  transition={{ duration: 4, ease: [0.22, 1, 0.36, 1]}} className="flex text-xs justify-center absolute text-white pt-[12%] z-50 lg:hidden">Scroll Down For More</motion.h2>
-              <video src={vid} autoPlay loop muted className="LandingVid  "></video>
+              <video src={vid} autoPlay loop muted playsInline className="LandingVid  "></video>
               </div>
               
               <div  style={{ opacity: slideIndex === index ? 1 : 0, visibility: slideIndex === index ? 'visible' : 'hidden'}} className=" h-full grid grid-cols-1 justify-between transition-all ease-linear duration-1000   ">
