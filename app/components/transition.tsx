@@ -28,6 +28,6 @@ const Transition = (OgComponent:any) => {
     )
 }
 
-
+Transition.displayName = 'transition'
 
 export default Transition
